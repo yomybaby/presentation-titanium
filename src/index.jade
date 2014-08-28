@@ -6,66 +6,152 @@ html
     title ti.sencha
 
     link(rel='stylesheet', type='text/css', href='build/build.css')
-
+    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
   body
-
+    div(id="fb-root")
+    script.
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&appId=294097790751111&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    - var smallTitle ='';
     article
 
-      section
-        h1 ti.sencha
-
-      section
-        h2 Keyboard Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
-
-      section
-        h2 Touch Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
-
-      section
-        h2 Responsive Slides
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
-
-      section
-        h2 Bullet List
-        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
-        ul
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
-
-      section
-        h2 Syntax Highlighting
-        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
-        pre
-          code.language-javascript.
-            bespoke.from('article', [
-              classes(),
-              keys(),
-              touch(),
-              bullets('li, .bullet')
-            ]);
-
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
+      section.light(data-bespoke-state='white')
+        h1 Titanium은 Sencha 친구
+        h4 tidev.kr
+        h5 이종은
+        h6 rev.20140828
 
       section(data-bespoke-state='emphatic')
-        h2 Emphatic Slide!
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-state">bespoke-state</a>
-
-      section
-        h2.bullet Just the beginning...
-        br
-        ul
-          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
-          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-          li Edit JavaScript in <em>'src/scripts/main.js'</em>
-        br
+        //- img(src="")
+        h2 이종은
+        h3 Titanium Developer
         ul
           li
-            strong Enjoy! :)
-            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+            a(href="http://tidev.kr",target="_blank") tidev.kr
+            |  운영
+          li
+            | Titanium Certified Expert & Titan
+          li 
+            | NIPA 글로벌 오픈 프론티어 : Titanium 프로젝트
+        ul.badge_list
+          li
+            img.badge(src='./images/badge/tidev.png')
+            | &nbsp;
+            img.badge(src='./images/badge/tced.png')
+            | &nbsp;
+            img.badge(src='./images/badge/titans.png')
+
+      section(data-bespoke-state='emphatic')
+        //- img(src="")
+        h2 이종은
+        h3 Yo Studio
+        ul
+          li 
+            i.fa.fa-tablet 
+            |  Web & App 컨설팅 / 교육 / 제작
+          li JS 
+            i.fa.fa-heart.red 
+            |  : node.js, backbone.js, titanium..
+        p
+          i.fa.fa-twitter
+          a(href="https://twitter.com/yomybaby",target="_blank")  @yomybaby
+          br
+          i.fa.fa-github
+          a(href="https://github.com/yomybaby",target="_blank")  yomybaby
+
+      section
+        h2 제가 여기 온 이유..
+
+      section.light.gif.gif--ryu
+        h1.bullet 쎈차! 싸우자!
+        i.fa.fa-ban.red.bullet(style="font-size:480px;position:absolute;top:0;left:110px;")
+
+      section.light.gif.gif--rocky
+        h1 타이타늄은
+          br
+          | 쎈차친구
+
+      section
+        p
+         img(src="/images/ti.png",style="width:400px")
+        h3 Titanium에 대한 
+        h2 진실 혹은 거짓
+
+      section
+        h1
+          i.fa.fa-html5.fa-3x
+        h2 HTML5 기반?
+
+      section.light.gif.gif--no
+
+      section
+        h2 Phonegap 류?
+
+      section.light.gif.gif--no2
+
+      section
+        h2 Native UI?
+
+      section.light.gif.gif--yes
+
+      section
+        h2 Javascript?
+
+      section.light.gif.gif--yes2
+
+      section.light(data-bespoke-state='white')
+        p
+         img(src="/images/ti.png",style="width:400px")
+        h2 그렇다면 Titanium은 무엇?
+
+      section.jpg.jpg--good
+        h2(style="left:30px;position:absolute;top:165px;background-color:#867B5F") 
+          | 개발자에게
+
+      section.jpg.jpg--hard2say
+        //- h2 짧은 시간안에 말로 설명하기에는..
+
+      section.light(data-bespoke-state='primary')
+        h2 일단 보여드리고
+        h3 그 다음 QnA로..
+
+      section(data-bespoke-state='puple')
+        h1.white
+          
+          |  DEMO TIME!
+        ul.white
+          li
+            i.fa.fa-wrench
+            span.light  BUILD :
+            |  Titanium Studio / Ti CLI
+          li
+            i.fa.fa-cube 
+            |  MVC : Alloy
+          li 
+            i.fa.fa-rocket
+            |  AWESOME : TiShadow
+          li
+            i.fa.fa-puzzle-piece
+            |  FANTASTIC 3rd party tools..
+
+      section
+        p(style="font-size:200px")
+          i.fa.fa-question
+        h1 QnA
+
+      section.light(data-bespoke-state='white')
+        h3 못다한 질문은 
+          i.fa.fa-beer.red.fa-flip-horizontal
+          |  혹은 .. 
+        img(src='./images/badge/tidev.png',style="width:200px;height:200px;")
+        h2 tidev.kr
+        h3 한국 타이타늄 사용자 모임
+
+
 
     script(src='build/build.js')

@@ -1,3 +1,8 @@
+- 싸우러 온게 아니다
+- 일단 온갖 오해들.. No! No! No! HTML5!, Phonegap류!
+- It's native!!
+- 참좋은데.. 뭐라 말로 편하기가 참..
+- 그냥 보여드리고 질의 응답 받으면서 풀어보겠다.
 
 ## Titanium은 Sencha의 친구
 - 웹뷰기반 hybrid 앱 배포 유 경험자?
