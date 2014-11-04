@@ -1,8 +1,8 @@
-@import 'nib' // CSS3 extensions for Stylus: http://visionmedia.github.io/nib/
+// @import 'nib' // CSS3 extensions for Stylus: http://visionmedia.github.io/nib/
 
 // Import CSS from "node_modules" and "bower_components"
 // thanks to Stylus' "import css" and "paths" options
-// @import 'prism/themes/prism-okaidia.css'
+@import 'prism/themes/prism-okaidia.css'
 // Check out "bower_components/prism/themes/" for available themes
 
 // New to Stylus? Check out http://learnboost.github.io/stylus
@@ -11,6 +11,7 @@
 @import 'nib' // CSS3 extensions for Stylus: http://visionmedia.github.io/nib/
 
 // variables!
+
 
 primary = #FF2D55
 
@@ -325,6 +326,11 @@ a
     background-image: url(../images/community.jpg)
   &--alone
     background-image: url(../images/alone.jpg)
+  &--shakeshark
+    background-image: url(../images/gif/shakeshark.gif)
+  &--licky
+    background-image: url(../images/licky_capture.jpg)
+
 
 
 
@@ -351,6 +357,10 @@ a
   color : #C86EDF;
 .white
   color : #F7F7F7;
+.whitebg
+  background-color : white
+.darkbg
+  background-color : #303030
 
 .lightGray
   color : #999;
