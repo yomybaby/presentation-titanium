@@ -2,6 +2,7 @@
   "name": "presentation-tisencha",
   "version": "0.0.0",
   "dependencies": {
-    "prism": "gh-pages"
+    "prism": "gh-pages",
+    "fontawesome": "~4.2.0"
   }
 }
