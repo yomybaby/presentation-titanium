@@ -1,8 +1,9 @@
-@import 'nib' // CSS3 extensions for Stylus: http://visionmedia.github.io/nib/
+// @import 'nib' // CSS3 extensions for Stylus: http://visionmedia.github.io/nib/
 
 // Import CSS from "node_modules" and "bower_components"
 // thanks to Stylus' "import css" and "paths" options
-// @import 'prism/themes/prism-okaidia.css'
+@import 'prism/themes/prism-okaidia.css'
+@import 'fontawesome/css/font-awesome.min.css'
 // Check out "bower_components/prism/themes/" for available themes
 
 // New to Stylus? Check out http://learnboost.github.io/stylus
@@ -11,6 +12,7 @@
 @import 'nib' // CSS3 extensions for Stylus: http://visionmedia.github.io/nib/
 
 // variables!
+
 
 primary = #FF2D55
 
@@ -72,6 +74,8 @@ article
       background : #007AFF
     &.puple
       background : #C86EDF
+    &.xecon
+      background : #404040;
 
 .bespoke-slide
   transition:
@@ -245,7 +249,7 @@ small
   font-size: 50%
 
 a
-  color: primary
+  color: #F080aE
   text-decoration: none
   &.black
     color: black
@@ -270,6 +274,12 @@ a
   &--gulp
     background-size: 25%
     background-image: url(../images/gulp.png)
+
+.full
+  width : 100%
+  padding : 0
+  left: 0
+  margin-left : 0
 
 .gif
   background-size: cover
@@ -317,11 +327,28 @@ a
     background-image: url(../images/gif/yes.gif)
   &--yes2
     background-image: url(../images/gif/yes2.gif)
+  &--yes3
+    background-image: url(../images/gif/yes3.gif)
+  &--yes4
+    background-image: url(../images/gif/yes4.gif)
+  &--community
+    background-image: url(../images/community.jpg)
+  &--alone
+    background-image: url(../images/alone.jpg)
+  &--shakeshark
+    background-image: url(../images/gif/shakeshark.gif)
+  &--licky
+    background-image: url(../images/licky_capture.jpg)
+  &--typing
+    background-image: url(../images/gif/typing.gif)
+
 
 
 
 
 /* add */
+.circle
+  border-radius : 50%
 .badge
   width : 70px
   height : 70px
@@ -343,6 +370,13 @@ a
   color : #C86EDF;
 .white
   color : #F7F7F7;
+.whitebg
+  background-color : white
+.darkbg
+  background-color : #303030
+
+.lightGray
+  color : #999;
 
 span.small_title
   left : 10px
@@ -358,3 +392,9 @@ span.small_title
     background-image: url(../images/good.jpg)
   &--hard2say
     background-image: url(../images/hard2say.jpg)
+
+.left
+  text-align:left
+
+.small_font
+  font-size: 12px

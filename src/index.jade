@@ -3,10 +3,10 @@ html
   head
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
-    title ti.sencha
+    title Titanium Mobile Dev
 
     link(rel='stylesheet', type='text/css', href='build/build.css')
-    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
+    //- link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
   body
     div(id="fb-root")
     script.
@@ -20,24 +20,98 @@ html
     - var smallTitle ='';
     article
 
-      section.light(data-bespoke-state='white')
-        h1 Titanium은 Sencha 친구
-        h4 tidev.kr
-        h5 이종은
-        h6 rev.20140828
+      //- section.light(data-bespoke-state='white')
+      //-   h1 Titanium
+      //-   h2 빠른 모바일 앱 개발
+      //-   h4 한국 타이타늄 사용자 모임 tidev.kr
+      //-   br
+      //-   h5 이종은
+      //-   h6 v.20141105
 
-      section(data-bespoke-state='emphatic')
-        //- img(src="")
+      //- XECon + PHPFest 2014 커버이미지
+      section(style="padding:0",data-bespoke-state='xecon')
+        img(src="./images/xecon_cover.png",width="640px")
+
+      section(style="padding:0")
+        h1.bullet 여러분은 PHP 
+          i.fa.fa-heart.red
+        h1.bullet 저는 JavaScript 
+          i.fa.fa-heart.red
+        //- h2.bullet 으잉?
+      
+      section.gif.gif--fight
+        h1 싸우러?
+
+      section.gif.gif--grunt-happy
+        h1 상생
+
+      //- 모바일 시대에 함
+      section.gif.gif--well-done
+        h1.white 편안하게
+
+      section
+        img.circle(src="./images/jong.png",width="200px")
+        br
         h2 이종은
-        h3 Titanium Developer
-        ul
+        h3
+          i.fa.fa-twitter
+          | &nbsp;
+          i.fa.fa-github
+          a(href="https://github.com/yomybaby",target="_blank")  yomybaby
+      section
+        h1 
+          i.fa.fa-child.fa-3x
+          | 초3
+      //- section
+      //-   table
+      //-     tr
+      //-       td
+      //-         img(src="./images/amadeus.jpg",width="350px")
+      //-       td
+      //-         img(src="./images/oksori.jpg",width="300px")
+      section
+        h1
+          i.fa.fa-graduation-cap.fa-2x
+          br
+          | C++
+      section
+        h1
+          i.fa.fa-building-o.fa-2x
+        h2.bullet ActionScript, JavaScript
+        h2.bullet HTML, CSS
+        h2.bullet Objective-C
+      section
+        h2
+          i.fa.fa-gamepad.fa-3x
+          br
+          | 취미로 시작한 Titanium
+        p
+         img(src="./images/ti.png",style="width:200px")
+      section.gif.gif--typing
+        
+
+      section
+        //- img(src="")
+        img(src="./images/yostudio_logo.svg",width="300px")
+        h2 이종은
+        h3.bullet Titanium Developer
+        p
+          i.fa.fa-mobile.fa-2x
+          | &nbsp;&nbsp;
+          i.fa.fa-desktop.fa-2x
+          | &nbsp;
+          i.fa.fa-book.fa-2x
+
+      section
+        ul 
           li
+            | 한국 타이타늄 사용자 모임 
             a(href="http://tidev.kr",target="_blank") tidev.kr
             |  운영
           li
-            | Titanium Certified Expert & Titan
-          li 
-            | NIPA 글로벌 오픈 프론티어 : Titanium 프로젝트
+            | Titanium Certified Expert
+          li Titan
+          li NIPA 글로벌 오픈 프론티어
         ul.badge_list
           li
             img.badge(src='./images/badge/tidev.png')
@@ -45,80 +119,195 @@ html
             img.badge(src='./images/badge/tced.png')
             | &nbsp;
             img.badge(src='./images/badge/titans.png')
+        
 
-      section(data-bespoke-state='emphatic')
-        //- img(src="")
-        h2 이종은
-        h3 Yo Studio
-        ul
-          li 
-            i.fa.fa-tablet 
-            |  Web & App 컨설팅 / 교육 / 제작
-          li JS 
-            i.fa.fa-heart.red 
-            |  : node.js, backbone.js, titanium..
-        p
-          i.fa.fa-twitter
-          a(href="https://twitter.com/yomybaby",target="_blank")  @yomybaby
-          br
-          i.fa.fa-github
-          a(href="https://github.com/yomybaby",target="_blank")  yomybaby
-
+      //- section
+      //-   h1 
+      //-     i.fa.fa-heart.fa-3x.red
+      //-   h2 Creative Commons
+      //-   h2 Open Source
       section
-        h2 제가 여기 온 이유..
-
-      section.light.gif.gif--ryu
-        h1.bullet 쎈차! 싸우자!
-        i.fa.fa-ban.red.bullet(style="font-size:480px;position:absolute;top:0;left:110px;")
-
-      section.light.gif.gif--rocky
-        h1 타이타늄은
-          br
-          | 쎈차친구
+        h1
+          i.fa.fa-mobile.fa-3x
+        h2 모바일 앱 개발 하시나요?
 
       section
         p
-         img(src="/images/ti.png",style="width:400px")
+         img(src="./images/ti.png",style="width:300px")
+        h2 Titanium [하|아]시나요?
+      section
+        h1
+          i.fa.fa-apple.fa-3x
+          span &nbsp;&nbsp;&nbsp;
+          i.fa.fa-android.fa-3x
+        h3 CROSS PLATFORM
+      section
+        h1 Open Source
+        h2 Apach License 2
+      section
+        h1 Titanium은 계속 성장중!
+        p
+          br
+          br
+          img(src="./images/ti.png",style="width:700px")
+
+      section
+        h1 듣보잡인데
+          br
+          | 정말?
+      section
+        img(src="./images/shot_device.png",style="width:150px")
+        br
+        h3 NUMBER OF UNIQUE MOBILE DEVICES
+        h1 270,000,000
+      
+      section
+        img(src="./images/shot_api.png",style="width:150px")
+        br
+        h3 NUMBER OF CLOUD API REQUESTS
+        h1 35,000,000,000
+      
+      section
+        img(src="./images/shot_fortune.png",style="width:150px")
+        br
+        h3 FORTUNE 100 COMPANIES USING TITANIUM
+        h1 68% of F100 
+
+      section
+        table
+          tr
+            td
+              img(src="./images/appcelerator.png",width="200px")
+            td
+              img(src="./images/jeff.jpg",width="200px")
+        h2.bullet Jeff Haynie
+        h3.bullet Coding CEO
+        //- p 2007년 Appcelerator Titanium Mobile이 핵심제품
+      
+      section.gif.gif--alone
+        h2(style="margin-top:100px") We can’t build it alone…
+
+
+      section.gif.gif--community
+        h2 The Titanium Community
+        h3 A FORCE FOR GOOD
+
+      section
+        img(src="./images/shot_developer.png",style="width:150px")
+        br
+        h3 NUMBER OF REGISTERED TITANIUM DEVELOPERS
+        h1 650,000
+        
+      //- section
+      //-   h2 수많은 오픈소스, 책, QnA 존재
+
+      secion 
+        h1 Gartner Magic Quadrant Leader
+        table
+          tr
+            td
+              img(src="./images/gartner/2013.png",width="100px")
+            td
+              img(src="./images/gartner/2012.png",width="100px")
+            td
+              img(src="./images/gartner/2011.png",width="100px")
+            td
+              img(src="./images/gartner/2010.png",width="100px")
+
+      section
+        h1 Community 
+          i.fa.fa-heart.red
+          br
+          | Open Source
+        p Significant prebuilt assets are available for use from Appcelerator's community, including code, apps and cloud services.
+
+      section.light(data-bespoke-state='white')
+        h2 자랑은 그만하고
+          br
+          | Titanium이 뭐요?
+        br
+        br
+        h4 (사실 이후에도 자랑은 쭉~)
+        p
+         img(src="./images/ti.png",style="width:400px")
+
+      section
+        p
+         img(src="./images/ti.png",style="width:400px")
         h3 Titanium에 대한 
         h2 진실 혹은 거짓
 
       section
-        h1
-          i.fa.fa-html5.fa-3x
-        h2 HTML5 기반?
-
-      section.light.gif.gif--no
-
-      section
-        h2 Phonegap 류?
+        table
+          tr
+            td
+              h1
+                i.fa.fa-html5.fa-3x
+                | &nbsp;&nbsp;&nbsp;
+            td 
+              img(src="./images/phoneGap.png",width="200px",style="border-radius: 100px;background-color:white")
+        h2 HTML5?
+          br
+          | PhoneGap류?
 
       section.light.gif.gif--no2
 
+      //- section.light.gif.gif--no
+
+      //- section
+        p vm상에서 돌아간다 webview기반이 아니다. javascript짜면 js와 native를 binding 하는 형태
+
       section
+        table
+          tr
+            td
+              img(src="./images/nativeui/native.jpg",width="200px")
+            td
+              h2 &nbsp; or &nbsp;
+            td
+              img(src="./images/nativeui/fake.jpg",width="200px")
+
         h2 Native UI?
 
-      section.light.gif.gif--yes
+      section.light.gif.gif--yes3
+        h1. YES! Native UI!
 
       section
-        h2 Javascript?
+        h3 iOS vs Android
+        a(href="http://www.knowyourmobile.com/apple/apple-ios-7/21408/ios-7-vs-android-44-kitkat-clash-titans",target="_blank")
+          img(width=315,height=251,src="http://static.knowyourmobile.com/sites/knowyourmobilecom/files/styles/insert_main_wide_image/public/6/67/music_0.jpg?itok=PzPXZ4wu")
+          p.small_font 원문 링크 바로가기
+
+      section
+        h2 JavaScript?
 
       section.light.gif.gif--yes2
+        h1.white YES!
+        h1.green JavaScript빠
+      section
+        h2 JavaScript
+          i.fa.fa-heart.fa-3x.red
+        h3 Build tool, MVC Framework, Hook..
 
-      section.light(data-bespoke-state='white')
-        p
-         img(src="/images/ti.png",style="width:400px")
-        h2 그렇다면 Titanium은 무엇?
+      section
+        pre.language-bash
+          code.
+            $ sudo npm install -g titanium
+            $ titanium setup
+
+      section
+        h2 JS 개발하시는 분?
 
       section.jpg.jpg--good
         h2(style="left:30px;position:absolute;top:165px;background-color:#867B5F") 
-          | 개발자에게
+          | JS 개발자에게
 
       section.jpg.jpg--hard2say
         //- h2 짧은 시간안에 말로 설명하기에는..
 
       section.light(data-bespoke-state='primary')
         h2 일단 보여드리고
-        h3 그 다음 QnA로..
+        h3 그 다음 설명하고 QnA로..
 
       section(data-bespoke-state='puple')
         h1.white
@@ -132,25 +321,228 @@ html
           li
             i.fa.fa-cube 
             |  MVC : Alloy
+          li
+            i.fa.fa-cloud
+            |  REST API adapter
           li 
             i.fa.fa-rocket
             |  AWESOME : TiShadow
           li
             i.fa.fa-puzzle-piece
             |  FANTASTIC 3rd party tools..
+      
+      section
+        h2 Alloy MVC
+        p project/app/..
+        img(src="./images/compile/alloy.png",width="750px")
 
       section
-        p(style="font-size:200px")
-          i.fa.fa-question
-        h1 QnA
+        h2 After Alloy Compile
+        p project/Resource/app/..
+        img(src="./images/compile/afteralloy.png",width="550px")
+
+      section
+        h2 After Titanium Compile
+        p build/..
+        img(src="./images/compile/iphone.png",width="400px")
+        br
+        img(src="./images/compile/android.png",width="400px")
+
+      section
+        h2 Ti current
+        img(src="./images/ticurrent.png",style="width:150px")
+      section
+        h2 Build & Run
+        ul.white.fa-ul(style="text-align:left")
+          li.bullet
+            i.fa-li.fa.fa-check
+            | Code change
+          li.bullet
+            i.fa-li.fa.fa-check
+            | Compile of Alloy (MVC)
+          li.bullet
+            i.fa-li.fa.fa-check
+            | Compile of Titanium
+          li.bullet
+            i.fa-li.fa.fa-check
+            | Compile of Xcode/Android
+          li.bullet
+            i.fa-li.fa.fa-check
+            | Deploying the app
+          li.bullet
+            i.fa-li.fa.fa-check
+            | Starting the app
+          li.bullet
+            i.fa-li.fa.fa-check
+            | Loading the code
+      section
+        h1 TiShadow
+          br
+          i.fa.fa-thumbs-up.fa-3x.red
+          //- i.fa.fa-rocket.fa-3x.red
+        h4 #1 Titanium Development Tool (3rd-paty)
+      section
+        h2.bullet Build & Run with
+          strong.red  TiShadow
+        ul.white.fa-ul(style="text-align:left")
+          li
+            i.fa-li.fa.fa-check
+            | Code change
+          li
+            i.fa-li.fa.fa-check
+            | Compile of Alloy
+          li.lightGray
+            i.fa-li.fa.fa-check
+            strike Compile of Titanium
+          li.lightGray
+            i.fa-li.fa.fa-check
+            strike  Compile of Xcode/Android
+          li.lightGray
+            i.fa-li.fa.fa-check
+            strike  Deploying the app
+          li.lightGray
+            i.fa-li.fa.fa-check
+            strike  Starting the app
+          li
+            i.fa-li.fa.fa-check
+            | Loading the code
+        br
+        h5.bullet 
+          | TiShadow 서버(Node.js)를 실행중인 앱으로 전달  
+          i.fa.fa-rocket.red.fa-3x
+          //- img(src="http://airpair-blog.s3.amazonaws.com/wp-content/uploads/2013/09/node.js.png",width=300)
+      section
+        h1 CLI Hook
+        img(src="https://www.npmjs.org/static/img/npm.png",style="width:100px")
+        br
+        ul
+          li Tn : Titanium Tiny CLI
+          li dev.tiapp : Build 환경에 따라 다른 값 지정
+          li testflight : build 후 testflight api로 업로드
+          li TiShadow
+          li ...
+
+      section
+        h1 
+          a(href="http://gitt.io",target="_blank") Gitt.io
+        img(src="http://gitt.io/badge.png",style="width:100px")
+        h2 Titanium Package Manager
 
       section.light(data-bespoke-state='white')
+        h1
+          i.fa.fa-cloud.fa-3x.red
+        h2 Titanium with
+        h1 CLOUD
+        p (또 하나의 가족? 선물)
+
+      section
+        h1 ACS
+        h3 (Appcelerator Cloud Service)
+        h3. = MBaaS
+        p
+          img(src="./images/acs.png",width="500px")
+      
+      section
+        img(src="./images/nodeacs.png",width="150px")
+        h1 Node.ACS
+        ul.fa-ul
+          li. = Node 호스팅
+          li
+            i.fa-li.fa.fa-cloud
+            | ACS의 API를 확장하고 커스터마이징 가능
+          li 
+            i.fa-li.fa.fa-cloud
+            | CLI를 이용해서 쉬운 생성과 배포
+          li 
+            i.fa-li.fa.fa-cloud
+            | CNAME을 이용한 독립 도메인 연결
+
+      section
+        h2 Titanium으로  
+          strong.red.whitebg Mobile App
+        h2 ACS로 
+          strong.red.whitebg 백엔드 API 서버
+        h2 Node.ACS로 
+          strong.red.whitebg 웹서비스
+
+      section.gif.gif--shakeshark
+        h2 서비스 모든 부분을
+          br
+          | Titanium Platform으로
+          br
+          | 만들어 볼까요? ^^
+
+      section.gif.gif--licky
+        //- img(src="./images/licky.svg",width="150px")
+        h1 &nbsp;
+        h1 &nbsp;
+        h2 &nbsp;
+        h2.darkbg
+          | 최근 오픈한
+          br
+          | 먹짤 전용 앱 
+          a(href="http://licky.co") Licky
+
+      section
+        table
+          tr
+            td
+              img(src="./images/licky.svg",width="200px")
+            td
+              h1
+                i.fa.fa-github.fa-3x
+
+        h3 소스도 오픈 
+          a(href="https://github.com/yoda-united/licky",target="_blank") github.com/yoda-united/licky
+      
+      section
+        h1 Ti.Next
+        h3 with
+        img(src="./images/hyperloop.png",height="100px")
+
+      section
+        h2 JS? Objective-C?
+        pre.language-javascript
+          code.
+            String.prototype.toUTF8 = function() {
+              return NSString.stringWithUTF8String('' + this);
+            };
+      section
+        img(src="./images/tinext.png",height="400px")
+
+
+      section.gif.gif--yes4
+        h2(style="padding-left:200px") Titanium 어때요?
+
+
+      section.light(data-bespoke-state='white')
+        h2 훌륭한 질문입니다.
         h3 못다한 질문은 
-          i.fa.fa-beer.red.fa-flip-horizontal
-          |  혹은 .. 
-        img(src='./images/badge/tidev.png',style="width:200px;height:200px;")
+          //- i.fa.fa-beer.red.fa-flip-horizontal
+          //- |  혹은 .. 
+        img(src='./images/badge/tidev.png',style="width:150px;")
         h2 tidev.kr
         h3 한국 타이타늄 사용자 모임
+        h4 
+        h3 이종은 ( jong@yostudio.kr )
+      section
+        img.circle(src="./images/git_banner_250.png",with="200px")
+        br
+        ul.fa-ul.left
+          li
+            i.fa.fa-li.fa-clock-o
+            | 11월 18일(화) 저녁 7시 ~ 10시
+          li
+            i.fa.fa-li.fa-map-marker
+            | 블로터아카데미 (합정역 근처)
+          li
+            i.fa.fa-li.fa-link
+            | class.yostudio.kr, bloteracademy.net
+      section.light.gif.gif--rocky.full
+        h1 감사합니다.
+        h4 본 자료는 
+          a(href="https://github.com/markdalgleish/bespoke.js",target="_blank") bespoke.js
+          | 를 이용하여 만들었습니다.
 
 
 
