@@ -170,6 +170,8 @@ html
             li
               i.fa.fa-ul.fa-angle-right
               |  '프론트엔드 기법3' - 서버부터 네이티브앱까지
+        br
+        h4.normal (부록1: 생산성을 위한 도구 소개, 부록2: 헷갈리는 JavaScript)
 
       section.light(data-bespoke-state='white')
         h1 진행안내
@@ -250,7 +252,7 @@ html
           ul
             li URI : Resource(대상)
             li Method : 동작
-            li Data
+            li (Data)
 
       section
         h2.bullet CRUD
@@ -339,6 +341,9 @@ html
           img(src="https://nodejs.org/images/logo.svg",width="300px")
 
       section
+        h1 Google V8
+
+      section
         h1.bullet 
           i.fa.fa-eye.fa-2x
           | &nbsp;&nbsp;&nbsp;&nbsp;
@@ -400,7 +405,9 @@ html
       section
         h1
           i.fa.fa-question.fa-3x
-        h2.bullet Q. 이 발표자료는 무엇으로 만든걸까요?
+        h2.bullet Q. 이 발표자료는
+          br 
+          | 무엇으로 만든걸까요?
         h3.bullet 파워포인트? 키노트?
         h3.bullet.strong.red A. HTML, CSS, JavaScript
 
@@ -462,6 +469,10 @@ html
 
       section
         h2 한번 해볼까요?
+        pre
+          code.
+            npm install -g generator-bespoke bower gulp
+        h3 (git 설치 필요)
 
       section.light(data-bespoke-state='white')
         h1
@@ -529,12 +540,22 @@ html
         h3 사용자 액션 = Event
 
       section
+        h2.bullet 이 코드는 어디에 넣지?
+        h2.bullet Independent components
+        h3.bullet (예: 밥을 준비한 엄마)
+
+      section
         h2 JS MV*
-        h3 Angular.js, Backbone.js, React.js, Ember.js..
+        h3 
+          a(href="http://angularjs.org",target="_blank") Angular.js, 
+          a(href="http://backbonejs.org",target="_blank") Backbone.js, 
+          a(href="http://reactjs.org",target="_blank") React.js, 
+          a(href="http://emberjs.com",target="_blank") Ember.js..
 
       section
         h2 예제로 살펴보기
-
+        h3
+          a(href="http://curran.github.io/screencasts/introToAngular/exampleViewer/#/",target="_blank") Angular 50 examples
 
       section.light(data-bespoke-state='white')
         h1
@@ -778,8 +799,6 @@ html
         a(data-bespoke-run)
           | Run!
       
-      section.light(data-bespoke-state='white')
-        h2 준비한 내용은 여기까지
       section.gif.gif--yes4
         h2(style="padding-left:200px") 준비한 내용은 
           br
@@ -791,83 +810,83 @@ html
         h3(style="background-color:white") jong@yostudio.kr
         h3(style="background-color:white") class.yostudio.kr
 
-      section
-        h1 JS
-        h2 제가 참 좋아하는데요.
+      //- section
+      //-   h1 JS
+      //-   h2 제가 참 좋아하는데요.
 
-      section
-        h2 Q. 왜 JS를 메인 언어로 택했나요?
+      //- section
+      //-   h2 Q. 왜 JS를 메인 언어로 택했나요?
 
-      section.gif.gif--speed
-        h1 SPEED
+      //- section.gif.gif--speed
+      //-   h1 SPEED
 
-      section
-        h1
-          i.fa.fa-thumbs-o-up.fa-3x
-        h2 멋진 아이디어로 한번에 성공?
+      //- section
+      //-   h1
+      //-     i.fa.fa-thumbs-o-up.fa-3x
+      //-   h2 멋진 아이디어로 한번에 성공?
 
-      section.gif.gif--run
-        h1 운동장
+      //- section.gif.gif--run
+      //-   h1 운동장
 
-      section
-        h1 실패해도
-        h1 잃을 것을 최소화
-        h2 시간, 돈, 체력..
+      //- section
+      //-   h1 실패해도
+      //-   h1 잃을 것을 최소화
+      //-   h2 시간, 돈, 체력..
       
-      section
-        h1
-          i.fa.fa-heart.fa-3x.red
-          br
-          span.red ONE LOVE
-          br
-          span JavaScript
+      //- section
+      //-   h1
+      //-     i.fa.fa-heart.fa-3x.red
+      //-     br
+      //-     span.red ONE LOVE
+      //-     br
+      //-     span JavaScript
 
-      section
-        h1 Node.js의 등장
+      //- section
+      //-   h1 Node.js의 등장
 
-      section
-        h1.bullet Node.js
-        h1.bullet 생태계
+      //- section
+      //-   h1.bullet Node.js
+      //-   h1.bullet 생태계
 
-      section
-        h2 웹을 넘어
-        h1 개발 도구
-        h3 (test, build.. on NPM)
+      //- section
+      //-   h2 웹을 넘어
+      //-   h1 개발 도구
+      //-   h3 (test, build.. on NPM)
 
-      section
-        h2 웹을 넘어   
-        h1 Native App
-        h3 (Titanium, React Native, NativeScript..)
+      //- section
+      //-   h2 웹을 넘어   
+      //-   h1 Native App
+      //-   h3 (Titanium, React Native, NativeScript..)
 
-      section
-        h2 웹을 넘어
-        h1 하드웨어까지
-        h3 (
-          a(href="http://spark.io") Spark
-          | )
+      //- section
+      //-   h2 웹을 넘어
+      //-   h1 하드웨어까지
+      //-   h3 (
+      //-     a(href="http://spark.io") Spark
+      //-     | )
 
-      section
-        h1
-          i.fa.fa-cutlery.fa-2x
-        h2 맛보기 시연^^
-        h3 (bespoke.js, titanium, BaaS..)
+      //- section
+      //-   h1
+      //-     i.fa.fa-cutlery.fa-2x
+      //-   h2 맛보기 시연^^
+      //-   h3 (bespoke.js, titanium, BaaS..)
 
 
-      section.light(data-bespoke-state='white')
-        h3 이야기3.
-        h1 JS 바로 알기
+      //- section.light(data-bespoke-state='white')
+      //-   h3 이야기3.
+      //-   h1 JS 바로 알기
 
       
-      section.light(data-bespoke-state='white')
-        h3 이야기4.
-        h1 다음부터
-          br
-          | 무엇을 할까요?
+      //- section.light(data-bespoke-state='white')
+      //-   h3 이야기4.
+      //-   h1 다음부터
+      //-     br
+      //-     | 무엇을 할까요?
 
-      section
-        h1 감사합니다.
-        h3 jong@yostudio.kr
-        h3 class.yostudio.kr
+      //- section
+      //-   h1 감사합니다.
+      //-   h3 jong@yostudio.kr
+      //-   h3 class.yostudio.kr
 
       //- section
       //-   h1.bullet Titanium Developer
