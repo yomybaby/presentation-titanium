@@ -64,7 +64,7 @@ html
         ul
           li.fa-2x - Titanium 
           li.fa-2x - 관련 활동 
-          li.fa-2x - 하반기 계획
+          li.fa-2x - 계획
           
       section.light(data-bespoke-state='white')
         p
@@ -110,8 +110,8 @@ html
         h3 개발보다는 제품자체에 집중
       
       section
-        h1 JS to Native
-        ul
+        h1.bullet JS to Native
+        ul.bullet
           li.fa-2x React Native 
             span.small_font by facebook
           li.fa-2x NativeScript 
@@ -164,6 +164,8 @@ html
             i.fa-li.fa.fa-check 
             <strong>CLI</strong> : 
             span.TrdM TiNy
+            | , 
+            span.Own gulp-timodule
           li
             i.fa-li.fa.fa-check
             <strong>UI</strong> : 
@@ -176,14 +178,8 @@ html
             span.TrdM ti.adam
           li
             i.fa-li.fa.fa-check
-            <strong>생산성</strong> : 
+            <strong>IDE</strong> : 
             span.Own atom-titanium
-            | , 
-            span.Own dev.tiapp
-            | , 
-            span.Own gulp-timodule
-            | , 
-            span.Own ipselector
             | , 
             span.TrdM language-tss
             | , 
@@ -194,8 +190,8 @@ html
             span.Own Licky
           li
             i.fa-li.fa.fa-check
-            <strong>예제</strong> : 
-            span.Own VirtualTiExample, skt-api-example-ti
+            <strong>기타</strong> : 
+            span.Own VirtualTiExample, skt-api-example-ti, ipselector
 
         br
         
@@ -215,12 +211,11 @@ html
         h4 #1 Titanium Development Tool (3rd-paty)
         
       section
-        h2 Atom Package for Titanium
-        table
-          tr
-            td 
-              img(src="./images/atom_logo.png",width="150px")
-            td by github
+        h2 Atom Package
+          br
+          | for Titanium
+        img(src="./images/atom_logo.png",width="150px")
+        h3 Atom by github
     
       section.light(data-bespoke-state='white')
         h1
@@ -228,21 +223,29 @@ html
         h1 커뮤니티
         
       section
-        img(src="./images/meetup.jpg",width="500px")
+        //- img(src="./images/meetup.jpg",width="500px")
         table
           tr
             td
               img(src='./images/badge/tidev.png',style="width:50px;")
             td
               h2 한국 타이타늄 사용자 모임
-        h3 http://tidev.kr
         ul.fa-ul(style="text-align:left")
           li
             i.fa-li.fa.fa-angle-right
-            | 포럼 및 페이스북 그룹 운영, 오프라인 정기 모임
+            | 커뮤니티 개설 및 운영
           li
             i.fa-li.fa.fa-angle-right
-            | 포럼 가입자 310명, 페이스북 그룹 가입자 355명
+            strong 포럼 
+            |  (tidev.kr) : 가입자 310명
+          li
+            i.fa-li.fa.fa-angle-right
+            strong 페이스북 그룹
+            |  (fb.tidev.kr) : 가입자 355명
+          li
+            i.fa-li.fa.fa-angle-right
+            strong 오프라인 모임
+            |  (meetup.tidev.kr) : 가입자 310명
 
       section
         h1 Global Community
@@ -264,7 +267,7 @@ html
           li  
             i.fa-li.fa.fa-check
             strong git 강의 
-            | : 삼성전자, 교원, 블로터아카데미..
+            | : 삼성전자, 교원, 블로터아카데미
           li 
             i.fa-li.fa.fa-check
             strong 최신 프론트엔드 기술 강의
