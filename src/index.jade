@@ -61,10 +61,11 @@ html
         h2.bullet Open Source
       
       section.light(data-bespoke-state='white')
-        ul
-          li.fa-2x - Titanium 
-          li.fa-2x - 관련 활동 
-          li.fa-2x - 계획
+        h1 목차
+        ul(style="text-align:left")
+          li.fa-2x - 프로젝트 소개 - Titanium 
+          li.fa-2x - 2015 활동 계획
+          li.fa-2x - 상반기 활동
           
       section.light(data-bespoke-state='white')
         p
@@ -119,6 +120,37 @@ html
           li.fa-2x Tabris.js 
               span.small_font by EclipseSource
               
+      
+      section.light(data-bespoke-state='white')
+        p
+         img(src="./images/ti.png",style="width:200px")
+        h1 2015 활동 계획
+      
+      section
+        table.borderTable
+          h1 활동 계획서
+          tr
+            th 프로젝트 개발 활동
+            th 커뮤니티 활동
+          tr.strong
+            td
+              | - Ti 주요 프로젝트 개선 활동
+              br
+              | - 기타 JS to Native 플랫폼 비교 분석
+            td
+              | - tidev.kr 중심으로 정기 모임 운영
+              br 
+              | - Ti.Next 나 타 플랫폼과 비교하는 특별 세미나 개최
+          tr
+            td
+              | - Ti을 활용한 자체 오픈소스 프로젝트 활동
+              br
+              | - Ti.Next / 개발 도구 개선중심의 문서 및 커밋활동
+            td
+              | - Ti 관련 국제 컨퍼런스 참가
+              br
+              |- 지식 공유활동
+            
       
       section.light(data-bespoke-state='white')
         p
@@ -190,8 +222,12 @@ html
             span.Own Licky
           li
             i.fa-li.fa.fa-check
+            <strong>Virtual-Dom</strong> : 
+            span.Own VirtualTi
+          li
+            i.fa-li.fa.fa-check
             <strong>기타</strong> : 
-            span.Own VirtualTiExample, skt-api-example-ti, ipselector
+            span.Own skt-api-example-ti, ipselector
 
         br
         
@@ -223,7 +259,7 @@ html
         h1 커뮤니티
         
       section
-        //- img(src="./images/meetup.jpg",width="500px")
+        img(src="./images/meetup.jpg",width="500px")
         table
           tr
             td
@@ -246,7 +282,19 @@ html
             i.fa-li.fa.fa-angle-right
             strong 오프라인 모임
             |  (meetup.tidev.kr) : 가입자 310명
-
+      
+      section
+        table
+          tr
+            td
+              img(src='./images/badge/tidev.png',style="width:50px;")
+            td
+              h2 Meetup
+        h3 
+          a(href="http://meetup.tidev.kr/meetups/javascript-to-native",target="_blank") 5월: JavaScript to Native
+        
+        h3 6월: 앱 서버로 어떤 BaaS가 좋을까? (연기중)
+          
       section
         h1 Global Community
         table
