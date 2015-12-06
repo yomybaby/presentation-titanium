@@ -1,8 +1,9 @@
+'use strict';
+
 var pkg = require('./package.json'),
   gulp = require('gulp'),
   gutil = require('gulp-util'),
   plumber = require('gulp-plumber'),
-  rimraf = require('gulp-rimraf'),
   rename = require('gulp-rename'),
   connect = require('gulp-connect'),
   browserify = require('gulp-browserify'),
@@ -11,6 +12,8 @@ var pkg = require('./package.json'),
   stylus = require('gulp-stylus'),
   autoprefixer = require('gulp-autoprefixer'),
   csso = require('gulp-csso'),
+  pdf = require('bespoke-pdf'),
+  del = require('del'),
   through = require('through'),
   opn = require('opn'),
   ghpages = require('gh-pages'),
@@ -57,37 +60,43 @@ gulp.task('images', ['clean:images'], function() {
     .pipe(connect.reload());
 });
 
-gulp.task('clean', function() {
-  return gulp.src('dist')
-    .pipe(rimraf());
+gulp.task('pdf', ['connect'], function () {
+  return pdf(pkg.name + '.pdf')
+    .pipe(gulp.dest('pdf'));
 });
 
-gulp.task('clean:html', function() {
-  return gulp.src('dist/index.html')
-    .pipe(rimraf());
+gulp.task('clean', function(done) {
+  del('dist', done);
 });
 
-gulp.task('clean:js', function() {
-  return gulp.src('dist/build/build.js')
-    .pipe(rimraf());
+gulp.task('clean:html', function(done) {
+  del('dist/index.html', done);
 });
 
-gulp.task('clean:css', function() {
-  return gulp.src('dist/build/build.css')
-    .pipe(rimraf());
+gulp.task('clean:js', function(done) {
+  del('dist/build/build.js', done);
 });
 
-gulp.task('clean:images', function() {
-  return gulp.src('dist/images')
-    .pipe(rimraf());
+gulp.task('clean:css', function(done) {
+  del('dist/build/build.css', done);
 });
 
-gulp.task('connect', ['build'], function(done) {
+gulp.task('clean:images', function(done) {
+  del('dist/images', done);
+});
+
+gulp.task('clean:pdf', function(done) {
+  del('pdf/' + pkg.name + '.pdf', done);
+});
+
+gulp.task('connect', ['build'], function() {
   connect.server({
     root: 'dist',
     livereload: true
   });
+});
 
+gulp.task('open', ['connect'], function (done) {
   opn('http://localhost:8080', done);
 });
 
@@ -101,10 +110,16 @@ gulp.task('watch', function() {
   ], ['js']);
 });
 
+gulp.task('exit', ['pdf'], function () {
+  process.exit();
+});
+
 gulp.task('deploy', ['build'], function(done) {
   ghpages.publish(path.join(__dirname, 'dist'), { logger: gutil.log }, done);
 });
 
 gulp.task('build', ['js', 'html', 'css', 'images']);
-gulp.task('serve', ['connect', 'watch']);
-gulp.task('default', ['build']);
+
+gulp.task('serve', ['open', 'watch']);
+
+gulp.task('default', ['build', 'pdf', 'exit']);
